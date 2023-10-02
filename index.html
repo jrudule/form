@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="plus/photo-1550147760-44c9966d6bc7.jpeg">
+            <div class="title">
+                <div><img src="plus/leaf-logo.png">LEAF</div>
+            </div>
+            <p>
+                Photo by 
+                <a href="https://unsplash.com/@riskiaansyah">
+                    Riski Andriansyah
+                </a>
+                on
+                <a href="https://unsplash.com/">
+                    Unsplash
+                </a>
+            </p>
+        </div>
+        <div class="formDiv">
+            <form novalidate action="#put" method="put">
+
+                <div class="inputs">
+                    <h2>Sign Up</h2>
+                    <div>
+                        <label for="firstName">*First name</label>
+                        <input type="text" id="firstName" name="firstName">
+                        <span class="firstNameError" aria-live="polite"></span>
+                    </div>
+                    <div>
+                        <label for="lastName">*Last name</label>
+                        <input type="text" id="lastName" name="lastName">
+                        <span class="lastNameError" aria-live="polite"></span>
+                    </div>
+                    <div>
+                        <label for="email">*Email</label>
+                        <input type="email" id="email" name="email">
+                        <span class="emailError" aria-live="polite"></span>
+                    </div>
+                    <div>
+                        <label for="number">Phone number</label>
+                        <input type="number" id="number" name="number">
+                    </div>
+                    <div>
+                        <label for="password">*Password</label>
+                        <input type="password" id="password" name="password">
+                        <span class="passwordError" aria-live="polite"></span>
+                    </div>
+                    <div>
+                        <label for="confirmPassword">*Confirm password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword">
+                        <span class="confirmPasswordError" aria-live="polite"></span>
+                    </div>
+                </div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a>Log in</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>

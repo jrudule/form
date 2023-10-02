@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("plus/Norse-Bold.otf")
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    width: 85vw;
+}
+.hero{
+    position: relative;
+    flex: 1;
+    display:grid;
+}
+
+.hero img{
+    height: 35rem;
+}
+.hero p{
+    position: absolute;
+    bottom: 1px;
+    color: #ffffff;
+    text-align: center;
+    width: 43.8em;
+    font-size: 12px;
+}
+.hero p a{
+    color: #ffffff;
+    
+}
+.title{
+    font-family: "Norse-Bold";
+    display: flex;
+    position: absolute;
+    top: 30vh;
+    background-color: #ffffff63;
+    width: 5.25em;
+    font-size: 5em;
+    align-items: center;
+    justify-content: center;color: rgb(0, 0, 0);
+}
+.title img{
+    height: 0.7em;
+    margin: 5px 0;
+}
+.title div{
+    align-self: center;
+}
+
+.formDiv{
+    flex: 2;
+    align-items: center;
+    display: flex;
+    background: rgb(242, 243, 245);
+    height: 35rem;
+}
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 150px 30px 50px;
+    border-top: rgb(224, 224, 234) solid 1px;
+    border-bottom: rgb(224, 224, 234) solid 1px;
+    background-color: #ffffff;
+}
+.inputs h2{
+    flex: 1 0 100%;
+}
+.inputs div{
+    flex: 1;
+    margin: 10px 30px 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin: 30px;
+    padding: 10px 40px;
+    color: #ffffff;
+    background-color: rgb(55, 96, 53);
+    border-radius: 5px;
+
+}
+
+input{
+    outline: none;
+    border: solid 2px rgb(242, 236, 236);
+    border-radius: 4px;
+    height: 23px;
+}
+input:focus{
+    border-color: blue;
+    box-shadow: 3px 3px rgb(225, 225, 225);
+}
+input.invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+input.valid{
+    border-color: rgb(49, 210, 73);
+    background-color: rgb(255, 255, 255);
+}
+
+.formDiv p{
+    margin: 0 30px;
+}
+.formDiv a{
+    color: rgb(49, 101, 57);
+    font-weight: bold;
+}
+
+span {
+    flex: 1;
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: red;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+}
+span.active {
+    padding: 0.3em;
+}
+
+@media (max-width: 800px){
+    body{
+        margin: 0;
+    }
+    .container{
+        width: fit-content;
+        flex-wrap: wrap;
+        margin: 0;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero{
+        width: 100vw;
+        overflow: hidden;
+        grid-template-columns: 100vw;
+        grid-template-rows: 30vh;
+        align-self: start;
+        justify-content: center;
+        justify-items: start;
+    }
+    .hero > img{
+        align-self: center;
+        margin: 0;
+        object-fit: cover;
+        width: 100vw;
+    }
+    .title{
+        justify-content: center;
+        top: 10vh;
+        width: 100vw;
+        margin: auto;
+    }
+
+}
